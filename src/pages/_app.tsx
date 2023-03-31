@@ -5,7 +5,7 @@ import Link from "next/link";
 import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
 import IntroSection from "../components/intro-section/intro-section";
-import Script from "next/Script";
+// import Script from "next/Script";
 import "../../public/lib/bootstrap/css/bootstrap.min.css";
 import "../../public/lib/font-awesome/css/font-awesome.min.css";
 import "../../public/lib/animate/animate.min.css";
