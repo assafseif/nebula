@@ -34,7 +34,7 @@ export default function App({ Component, pageProps }: AppProps) {
           rel="stylesheet"
         />
       </Head>
-      <Script src="../../public/lib/jquery/jquery.min.js"></Script>
+      {/* <Script src="../../public/lib/jquery/jquery.min.js"></Script>
       <Script src="../../public/lib/jquery/jquery-migrate.min.js"></Script>
       <Script src="../../public/lib/bootstrap/js/bootstrap.bundle.min.js"></Script>
       <Script src="../../public/lib/easing/easing.min.js"></Script>
@@ -46,7 +46,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Script src="../../public/lib/isotope/isotope.pkgd.min.js"></Script>
       <Script src="../../public/lib/lightbox/js/lightbox.min.js"></Script>
       <Script src="contactform/contactform.js"></Script>
-      <Script src="js/main.js"></Script>
+      <Script src="js/main.js"></Script> */}
       <Header />
       <Component {...pageProps} />
       <Footer />
