@@ -29,10 +29,10 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
 
         {/* Google Fonts */}
-        <link
-          href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
+        {/* <link
+          href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700&display=optional"
           rel="stylesheet"
-        />
+        /> */}
       </Head>
       {/* <Script src="../../public/lib/jquery/jquery.min.js"></Script>
       <Script src="../../public/lib/jquery/jquery-migrate.min.js"></Script>
