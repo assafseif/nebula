@@ -18,7 +18,7 @@ const Header: React.FC = () => {
           <Link href="#intro">
             <div>
               <Image
-                src="/img/logo.png"
+                src="/img/nebulalogo.png"
                 alt=""
                 className="img-fluid"
                 width="200"

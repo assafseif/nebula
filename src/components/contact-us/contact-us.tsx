@@ -1,6 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import Image from "next/image";
+import { PostApi } from "@/src/lib/Api";
+import config from "@/src/conf/config";
 
 interface FormData {
   Name: string;
@@ -10,8 +12,6 @@ interface FormData {
 }
 
 const ContactUs = () => {
-
-
   //USE STATE TO SAVE DATA
   const [formData, setFormData] = useState<FormData>({
     Name: "",
@@ -37,8 +37,17 @@ const ContactUs = () => {
   async function handleSubmit(e: any) {
     //TO PREVENT RELOAD
     e.preventDefault();
+    console.log(process.env.API_URL);
+    PostApi(formData, "http://localhost:8080/metadata/send-email");
 
-    console.log(formData);
+    setFormData((prevFormData) => {
+      return {
+        Name: "",
+        Email: "",
+        Subject: "",
+        Message: "",
+      };
+    });
   }
 
   return (
@@ -79,7 +88,13 @@ const ContactUs = () => {
             <div className="form">
               <div id="sendmessage">Your message has been sent. Thank you!</div>
               <div id="errormessage"></div>
-              <form action="" method="post" role="form" className="contactForm" onSubmit={handleSubmit}>
+              <form
+                action=""
+                method="post"
+                role="form"
+                className="contactForm"
+                onSubmit={handleSubmit}
+              >
                 <div className="form-row">
                   <div className="form-group col-lg-6">
                     <input
@@ -138,7 +153,7 @@ const ContactUs = () => {
                   <div className="validation"></div>
                 </div>
                 <div className="text-center">
-                  <button type="submit" title="Send Message" >
+                  <button type="submit" title="Send Message">
                     Send Message
                   </button>
                 </div>

@@ -19,13 +19,13 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <meta charSet="utf-8" />
-        <title>NewBiz Bootstrap Template</title>
+        <title>Nebula</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="keywords" content="" />
         <meta name="deScription" content="" />
 
         {/* Favicons */}
-        <link rel="icon" href="img/favicon.png" />
+        <link rel="icon" href="img/nebula.jpeg" />
         <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
 
         {/* Google Fonts */}
